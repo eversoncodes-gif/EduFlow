@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.topo{
+    /* border: solid 4px black; */
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 5%; 
+}
+.logo{
+    /* border: solid 3px red; */
+    flex: 2;
+    text-align: center;
+}
+.logo h1{
+    color: blue;
+    font-size: clamp(1.3rem,4vw,1.6rem);
+}
+.nav-bar{
+   display: flex;
+    /* border: 2px solid green; */
+    flex: 5;
+    justify-content: end;
+    margin-right:4%;
+    /* text-align: end; */
+}
+.nav-bar a{
+    /* gap: 20px; */
+    padding: 16px 20px;
+    text-decoration: none;
+    color: #44a4a4;
+    font-weight: 400;
+}
+.nav-bar a:hover{
+    border-top: 3px solid blue;
+}
+
+#entra{
+    border: none;
+    background-color:blue;
+    color: white;
+    border-radius: 5px;
+}
+
+#entra:hover{
+    border-top:3px solid #44a4a4 ;
+}
+
+.hero{
+    padding: 100px 5%;
+    /* border: 2px solid #44a4a4; */
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: clamp(1.5rem,5vw,2rem);
+}
+
+.btn-flr{
+    text-decoration: navajowhite;
+    /* border-radius: 3px solid  #44a4a4 ; */
+    /* background-color: #44a4a4; */
+    color: blue;
+    font-size: 20px;
+    padding: 14px 24px;
+    }
+
+    .funcionalidades{
+        width: 90%;
+        margin: auto ;
+        padding: 30px 3%;
+        /* border: 3px solid green; */
+    }
+
+
+    .funcionalidades h2{
+        text-align: center;
+        font-size: 30px;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .funcoes{
+     /* border: 3px solid grey; */
+     display: flex;
+     text-align: center;
+     justify-content: center;
+
+    }
+    .funcoes ul{
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .why{
+        padding-top: 30px;
+ width: 90%;
+    margin: auto;
+}
+.why h2{
+    text-align: center;
+   
+}
+
+.cards{
+    padding:20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.card{
+    box-shadow: 2px 8px 16px #44a4a4;
+    background-color: #44a4a4;
+    color: white;
+    padding: 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.card:hover{
+
+    color: blue;
+    transform: translateY(-4px);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #44a4a4, #266d6d);
+}
+footer p{
+    font-family: 'Poppins', sans-serif;
+}
