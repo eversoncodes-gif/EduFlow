@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css.da.pasgina/dashboard.css">
+    <title>EduFlow - Dashboard</title>
 </head>
 <body>
+      <!-- CABEÇALHO -->
+      <header class="topo">
+          <div class="logo">
+            <h1>EduFlow</h1>
+          </div>
+         <div class="usuario">
+          <span>Funcionario Administrativo</span>
+          </div>
+          <!-- <div class="navegar">
+              <nav class="navegar no dashboard">
+                <a href="#Dashboard">Dash board</a>
+                <a href="#alunos">Alunos</a> 
+                <a href="#documentos">Documentos</a>
+                <a href="#pagamentos">Pagamentos</a>
+                <a href="" id="sair">Sair</a>
+               
+           </nav>
+         </div> -->
+      </header>
+        <!-- ESTRUTURA PRINCIPAL -->
+       <div class="layout">
+          <!-- MENU LAteral -->
+           <aside class="sidebar">
+              
+            <nav class="menu">
+                <a href="#dashboard" class="menu-link">
+                    Dashboard
+                </a>
+                <a href="#alunos" class="menu-link">
+                    Alunos
+                </a>
+                <a href="#documentos" class="menu-link">
+                    Documentos
+                </a>
+                <a href="#pagamentos" class="menu-link">
+                    Pagamentos
+                </a>
+                <a href="#relatorios" class="menu-link">
+                    Relatórios
+                </a>
+                <a href="#configuracoes" class="menu-link">
+                    Configurações
+                </a>
+
+                <a href="login.html" class="menu-link sair" id="sair">
+                    Sair
+                </a>
+
+            </nav>
+           </aside>
+      </div>
+
+      
+      <!-- Conteudo Principal -->
+        <main>
+            
+
+            <!-- DASHBOARD -->
+            <section id="dashboard" class="pagina">
+
+                <div class="titulo-pagina">
+                    <h2>Dashboard</h2>
+
+                    <p>
+                        Bem-vindo ao EduFlow, sistema de gestão e cadastro estudantil.
+                    </p>
+                </div>
+
+
+                <!-- CARDS DE RESUMO -->
+                <div class="cards-resumo">
+
+                    <div class="card">
+                        <h3>Total de alunos</h3>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="card">
+                        <h3>Novos alunos</h3>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="card">
+                        <h3>Documentos</h3>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="card">
+                        <h3>Pagamentos pendentes</h3>
+                        <strong>0</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ALUNOS -->
+            <section id="alunos" class="pagina">
+
+                <div class="titulo-pagina">
+
+                    <h2>Alunos</h2>
+
+                    <p>
+                        Consulte e faça a gestão dos alunos cadastrados.
+                    </p>
+
+                </div>
+                     <div class="acoes">
+
+                    <button id="adicionar-aluno">
+                        + Adicionar aluno
+                    </button>
+
+                    <input
+                        type="search"
+                        id="pesquisar-aluno"
+                        placeholder="Pesquisar aluno..."
+                    >
+
+                </div>
+
+      
+      
+
+
+
+         </main>
+    
+    
+
     
 </body>
 </html>

@@ -13,12 +13,29 @@
 <body>
     <main>
         <section class="login-data">
-            <H1>Cadastre-se ja</H1>
+            <H1>Entrar no EduFlow</H1>
             <div class="container">
                 <div class="logo"></div>
-                <Form><input type="text" placeholder="Escreva seu nome aqui">
-                    <input type="password" name="leters" id="passe-word" placeholder="digite sua palavra passe aqui">
-                    <button>Entrar</button>
+                <Form id="login-form">
+                    <div class="campo">
+                        <label for="nome">Nome de utilizador</label>
+                        <!-- <h2>Digite seu Nome</h2> -->
+                       <input id="nome" 
+                       type="text" 
+                       name="nome" 
+                       placeholder="Escreva seu nome aqui"
+                       required>
+                    </div>
+                    <div class="campo">
+                         <label for="password">Palavra-passe</label>
+                          <input
+                           type="password" 
+                           name="password" 
+                           id="passe-word"
+                           placeholder="digite sua senha"
+                           required>
+                    </div>
+                    <button type="submit">Entrar</button>
                     <!-- <input type="submit" value="submeter o sistema"> -->
                 </Form>
            </div>

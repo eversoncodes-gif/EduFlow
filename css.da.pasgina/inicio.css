@@ -1,3 +1,10 @@
+html{
+    scrollbar-color: green;
+scroll-behavior: smooth;
+
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -12,13 +19,18 @@ body{
 }
 
 .topo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 8px 16px rgba(0,0,0,0.45);
     /* border: solid 4px black; */
     display: flex;
     flex-flow:row wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 5%; 
+    padding: 15px 5%;
+    z-index: 5; 
 }
 .logo{
     /* border: solid 3px red; */
@@ -56,7 +68,7 @@ body{
 }
 
 #entra:hover{
-    border-top:3px solid #44a4a4 ;
+    border-top:5px solid #44a4a4 ;
 }
 
 .hero{
