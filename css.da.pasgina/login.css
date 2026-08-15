@@ -18,26 +18,37 @@ body{
 
 .login-data{
     margin-top: 45%;
-    border: solid 3px white;
+    /* border: solid 3px white; */
+    box-shadow: 2px 8px 16px #1e1f29;
     display: flex;
+    background:  #2a2b36;
     flex-direction: column;
     align-items: center;
     flex:1;
     justify-content: space-between;
-    padding: 100px 70px;
+    width: 100%;
+    /* padding: 50px 100px; */
+    
+
 }
 
 form{
 display: grid;
-flex-direction: column;
+width: 100%;
  
 /* border: 3px solid red; */
 }
 input{
-    height: 1.6rem;
+
+    height: 2rem;
     background: white;
+}
+.campo{
+    display: grid;
+    
+    padding: 2px;
 }
 
 footer{
-    padding: 170px 50px;
+
 }
