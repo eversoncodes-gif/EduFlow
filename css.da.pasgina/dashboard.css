@@ -2,12 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+
 }
 :root{
-    --fundo:#f5f5f7;
     --primary-color:#4a44a4;
+    --secondary-color:#6c63FF;
+    --fundo:#f5f5f7;
     --card:#ffffff;
+    --main-text:#2D3436;
+    --sucess:#00BB94;
+    --antention:#FDCB6E;
+    --error:#E17055;
     --text:#12124e;
     --info:rgb(8, 8, 64);
     --font-main:"Roboto",sans-serif;
@@ -17,72 +22,231 @@
 body{
 padding: 0;
 margin: 0;
+line-height: 1.5;
+background-color: var(--fundo);
 font-family: var(--font-main);
-
 }
 
 h1,h2,h3{
 font-family: var(--font-heading);
-color: var(--text);
+}
+
+.dash{
+    margin-left: 1%;
+    padding: 10px;
+    gap: 20px;
+    font-family: var(--font-logo);
+    font-size: clamp(1.4rem,4vw,2rem);
+}
+
+#dash{
+   color: var(--main-text);
 
 }
+
+.dash span{
+color: var(--primary-color);
+}
+
 .topo{
 /* border: 3px solid green; */
-padding: 13px;
+padding: 3px;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 12px;
-box-shadow: 2px 4px 6px  var(--text);
+flex-direction: row wrap;
+gap: 60px;
+background-color: var(--primary-color);
+color: var(--card);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px ;
+ margin-left: 1%;
+ margin-right: 1%;
+height: 50px;
+/* box-shadow: 2px 4px 6px  var(--text); */
+}
+
+.logo{
+flex: 1;
+text-align: center;
+/* border: 2px solid grey; */
+
+}
+
+.logo h1{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font-logo);
+    /* color: var(--primary-color); */
+}
+
+
+
+
+.usuario{
+flex: 5;
+text-align: end;
+margin-right:3%;
+/* border: #00BB94 solid 3px; */
+}
+.usuario span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font-heading)
 }
 
 .layout{
-border: solid red 2px;    
+/* border: solid red 2px; */
  display: flex;
  align-items: center;
  justify-content: space-between;
- gap: 10px;
- margin-top: 20px;
+ gap: 23px;
  width: 100%;
  /* box-shadow: -4px 12px 22px rgba(0,0,0,0.62) ; */
 }
+
+
 .sidebar{
- /* border: 2px solid blue;    */
- display:grid;
-grid: 1;
-flex: 1;
-background: var(--fundo);
- margin: 1% 22px 3px;
- height: 100vh;
-box-shadow: 3px 12px 24px white;
+     margin-left: 1%;
+    flex: 1;
+    /* border: 2px solid blue;    */
+    height: 100vh;
+    background-color:var(--card);
 }
+
+
 .menu{
-padding: 35px;    
+padding: 35px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between center;
-gap: 30px;
+gap: 20px;
 
 }
+
 .menu-link{
 text-align: center;
-box-shadow: -5px 3px 12px rgba(0,0,0,0.62);
-padding: 20px;
+/* gap: 10px; */
 width: 100%;
 text-decoration: none;
-color: var(--text);
+font-family: var(--font-main);
+color: var(--main-text);
+transition: 0.4ms ease;
+border-radius: 5px;
+padding: 10px;
+}
 
-} 
+.menu-link:hover{
+    background-color: var(--primary-color);
+  color: var(--card);
 
-
-
+}
 
 
 main{
     flex: 4;
-    border: solid 4px grey;
+    /* border: solid 4px grey; */
     height: 100vh;
-    margin-right: 3%;
+    margin-right: 1%;
     width: 100%;
 }
+
+.pagina{
+    display: grid;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.titulo-pagina{
+/* border: 3px solid black; */
+color: var(--main-text);
+font-family: var(--font-main);
+padding: 12px;
+}
+.titulo-pagina h2{
+    font-family: var(--font-heading);
+}
+
+.cards-resumo{
+display: flex;
+align-items: center;
+justify-content:space-between;
+
+}
+.card{
+    background-color: var(--card);
+    padding: 20px;
+    color: var(--main-text);
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 2px 8px 16px rgba(0,0,0,0.5 alpha);
+    cursor:pointer;
+}
+
+/* aqui e a parte dos alunos  */
+
+#alunos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 3px solid blue;
+    background-color: var(--card);
+    gap: 40px;
+    
+}
+/*  aqui e a tabela dentro dos alunos */
+
+#alunos .tabela-container :nth-child(3){
+     grid-column:span 2; /*aqui era suposto espandir a tabela duas vezes mais que as outras areas */
+}
+
+.tabela-container{
+width: 100%;
+border: 2px solid greenyellow;
+
+}
+
+/* aqui e o titulo da parte os alunos */
+
+#alunos .titulo-pagina{
+    border: solid 3px greenyellow;
+}
+
+/* aqui sao as funcoes de pesquisa e adiconar  */
+
+.acoes{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 3px solid gray;
+    gap: 40px;
+
+}
+
+#pesquisar-aluno{
+ height: 2.4rem;
+ width: 50%;
+ padding: 20px;
+ color: var(--main-text);
+ font-family: var(--font-heading);
+ border-radius: 8px;
+ 
+}
+
+#adicionar-aluno{
+    /* height: 2.3rem; */
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--card);
+    font-family: var(--font-heading); 
+    padding: 20px;
+    border-radius: 8px;
+transition: 0.3s ease-in;    
+}
+
+#adicionar-aluno:hover{
+    background-color: #12124e;
+    transform: scaleX(4px);
+    cursor: pointer;
+}
+/* aqui sao as acoes mais fechadas  */
