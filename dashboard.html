@@ -6,6 +6,9 @@
     <meta name="keywords" content="Dashboards,Descricao do sistema, gerir clientes">
     <meta name="author" content="Everson Anselmo Muianga">
     <meta name="description" content="A dashboard do EduFLow, aqui eles terao a base imicial do projecto, a parte administraiva">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -45,26 +48,26 @@
               
             <nav class="menu">
                 <a href="#dashboard" class="menu-link">
-                  <i ></i>  Dashboard
+                  <i class="fa-solid fa-house"></i> Dashboard
                 </a>
                 <a href="#alunos" class="menu-link">
-                   <i></i> Alunos
+                   <i class="fa-solid fa-users"></i> Alunos
                 </a>
                 <a href="#documentos" class="menu-link">
-               <i></i>     Documentos
+               <i class="fa-solid fa-file"></i> Documentos
                 </a>
                 <a href="#pagamentos" class="menu-link">
-                  <i></i>  Pagamentos
+                  <i class="fa-solid fa-credit-card"></i> Pagamentos
                 </a>
                 <a href="#relatorios" class="menu-link">
-                   <i></i> Relatórios
+                   <i class="fa-solid fa-chart-column"></i> Relatórios
                 </a>
                 <a href="#configuracoes" class="menu-link">
-                    <i></i>Configurações
+                    <i class="fa-solid fa-gear"></i> Configurações
                 </a>
 
                 <a href="login.html" class="menu-link sair" id="sair">
-                    <i></i>Sair
+                    Sair
                 </a>
 
             </nav>
@@ -78,7 +81,8 @@
             <section id="dashboard" class="pagina">
 
                 <div class="titulo-pagina">
-                    <h2>Dashboard</h2>
+                    <h2>Dashboard</h2> 
+                    <i class=""></i>
 
                     <p>
                         Bem-vindo ao EduFlow, sistema de gestão e cadastro estudantil.
@@ -158,6 +162,58 @@
                         </thead>
 
                         <tbody id="lista-alunos">
+                           <!-- linha 1 -->
+                            <tr>
+                                <td>1</td>
+                                <td>joao felix Figueiro</td>
+                                <td>12ª classe</td>
+                                <td>A</td>
+                                <td><span class="ativo">Activo</span></td>
+                                <td><i></i><i></i><i></i></td>
+
+                            </tr>
+                            <!-- linha 2 -->
+                             <tr>
+                                <td>2</td>
+                                <td>tania felix Figueiro</td>
+                                <td>11ª classe</td>
+                                <td>A</td>
+                                <td><span class="ativo">Activo</span></td>
+                                <td><i></i><i></i><i></i></td>
+
+                            </tr>
+                            <!-- llinha 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td>Everson Muianga</td>
+                                <td>12ª classe</td>
+                                <td>B</td>
+                                <td> <span class="pendente">Pendente</span></td>
+                                <td><i></i><i></i><i></i></td>
+                            </tr>
+                            <!-- linha 4 -->
+                            <tr>
+                                <td>4</td>
+                                <td>Anselmo Ernesto</td>
+                                <td>10ª classe</td>
+                                <td>C</td>
+                                <td><span class="inativo">Inativo</span> </td>
+                                <td><i></i><i></i><i></i></td>
+
+                            </tr>
+                            <!-- linha 5 -->
+                                 <tr>
+                                <td>5</td>
+                                <td>Everson Muianga</td>
+                                <td>9ª classe</td>
+                                <td>D</td>
+                                <td><span class="ativo">Activo</span></td>
+                                <td><i></i><i></i><i></i></td>
+                            </tr>
+
+
+
+
 
                             <!--
                                 Os alunos serão adicionados
@@ -197,6 +253,7 @@
 
 
                 <div class="documentos-lista">
+                    <img src="imgEduFLow/text-editor.png" alt="Documento azul com uma caneta por cima">
 
                     <p>
                         Ainda não existem documentos cadastrados.
