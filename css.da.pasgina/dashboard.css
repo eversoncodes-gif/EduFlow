@@ -131,7 +131,11 @@ text-align: center;
 
 /* aqui sao os icones da side bar */
 .menu-link i{
-    margin-left: 30px;
+    margin: 0;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* border: solid green 2px; */
     /* text-align: end; */
         font-size: 20px;
@@ -143,8 +147,9 @@ text-align: center;
 } */
 
 .menu-link{
-    display: inline-flex;
-    gap: 20px;
+    display:flex;
+    align-items: center;
+    gap: 14px;
     /* border: solid 2px var(--primary-color); */
     font-size:  20px;
 /* text-align: center; */
@@ -153,9 +158,9 @@ width: 100%;
 text-decoration: none;
 font-family: var(--font-main);
 color: var(--main-text);
-transition: 0.4ms ease;
-border-radius: 5px;
-padding: 10px;
+transition: 0.3s ease;
+border-radius: 6px;
+padding: 12px 16px;
 }
 
 #sair{
