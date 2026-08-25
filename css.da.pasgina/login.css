@@ -3,33 +3,49 @@
 
 }
 
+:root{
+    --primary-color:#4a44a4;
+    --secondary-color:#6c63FF;
+    --fundo:#f5f5f7;
+    --card:#ffffff;
+    --main-text:#2D3436;
+    --sucess:#00BB94;
+    --antention:#FDCB6E;
+    --error:#E17055;
+    --text:#12124e;
+    --info:rgb(8, 8, 64);
+    --font-main:"Roboto",sans-serif;
+    --font-heading:"Popins",sans-serif;
+    --font-logo:"Lobster",sans-serif;
+}
+
 body{
-    color: white;
-    background: #1e1f29; ;
+    color: var(--card);
+    background: var(--primary-color) ;
     display: flex;
+    font-family: var(--font-main);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
     line-height: 1.7;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 .login-data{
     margin-top: 45%;
     /* border: solid 3px white; */
-    box-shadow: 2px 8px 16px #1e1f29;
+    /* box-shadow: -2px 3px 6px var(--fundo); */
     display: flex;
-    background:  #2a2b36;
+    background:  var(--secondary-color);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
     width: 100%;
     padding: 50px 100px;
-    
-
+    border-radius: 1vh;
 }
 
 form{
@@ -41,17 +57,42 @@ width: 100%;
 }
 input{
     height: 2rem;
-    background: white;
+    background: var(--card);
+    color: var(--main-text);
     width: 100%;
+    font-size: 22px;
 }
 .campo{
     display: grid;
-    padding: 2px;
+    padding: 4px;
+
+}
+input{
+    border: none;
+    border-radius: 6px;
+    height: 2.5rem;
+    width: 100%;
+    /* border-top-right-radius: 11px;
+    border-top-left-radius: 11px; */
+}
+button{
+ border: none;
+ width: 60%;
+ margin-left: 20% ;
+ text-align: center;
+ padding: 10px;
+ border-radius: 4px;
+ margin-top: 5%;
+
 }
 label{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: var(--font-main);
 }
 
-footer{
+footer p{
+text-align: center;
+font-size: clamp(1.2rem,4vw,2rem);
+padding:3rem;
 
 }
