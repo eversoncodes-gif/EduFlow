@@ -132,9 +132,9 @@ text-align: center;
 /* aqui sao os icones da side bar */
 .menu-link i{
     margin: 0;
+    width: 24px;
     display: flex;
     align-items: center;
-    width: 24px;
     justify-content: center;
     /* border: solid green 2px; */
     /* text-align: end; */
@@ -147,10 +147,11 @@ text-align: center;
 } */
 
 .menu-link{
-    display: flex;
+
+    display:flex;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    gap: 14px;
+
     /* border: solid 2px var(--primary-color); */
     font-size:  20px;
 /* text-align: center; */
@@ -160,7 +161,7 @@ text-decoration: none;
 font-family: var(--font-main);
 color: var(--main-text);
 transition: 0.3s ease;
-border-radius: 5px;
+border-radius: 6px;
 padding: 12px 16px;
 }
 
