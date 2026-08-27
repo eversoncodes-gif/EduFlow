@@ -301,8 +301,18 @@ width: 100%;
 }
 
 .tabela-container table td{
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
     text-align: center;
     padding: 11px;
+}
+table td button{
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background: var(--card);
 }
 
 
@@ -380,7 +390,7 @@ color: var(--text);
   text-align: center;
   flex-direction: column;
   border-radius: 10px;
-  height: 300px;
+  height: 360px;
 }
 
 /* aqui e a parte do  botao adicionar documentos */
