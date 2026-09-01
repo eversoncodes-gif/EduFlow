@@ -83,7 +83,7 @@ gap: 20px;
 
 .logo h1{
     font-size: clamp(1.3rem,4vw,2rem);
-    font-weight: 600;
+    font-weight: 400;
     font-family: var(--font-heading);
     /* color: var(--primary-color); */
 }
@@ -150,13 +150,14 @@ padding: 8px;
 /* aqui e o utilizador */
 
 .usuario{
-/* flex: 3; */
-display: flex;
+flex: 2;
+display: grid;
+grid-template-columns: auto 1fr auto;
 align-items:center;
 /* justify-content:space-between; */
-gap: 10px;
+gap: 12px;
 /* margin-right:3%; */
-border: #00BB94 solid 3px;
+/* border: #00BB94 solid 3px; */
 }
 /* icone do utilizador */
 .usuario > i:first-child{
@@ -167,7 +168,7 @@ border: #00BB94 solid 3px;
 .dados-usuario{
 display: flex;
 flex-direction: column;
-line-height: 1.2;
+line-height: 1.4;
 }
 .dados-usuario span{
     font-size: 13px;
@@ -175,13 +176,14 @@ line-height: 1.2;
     font-family: var(--font-heading)
 }
 .dados-usuario small{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* aqui e a seta */
 .usuario > i:last-child{
     font-size: 11px;
-    margin-left: 3px;
+    cursor: pointer;
+    margin-right:3px;
 }
 /* aqui e o layout da pagina */
 .layout{
