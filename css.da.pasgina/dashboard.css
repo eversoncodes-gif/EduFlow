@@ -38,18 +38,28 @@ font-family: var(--font-heading);
     padding-left: 4%;
     font-family: var(--font-logo);
     font-size: clamp(1.5rem,5vw,2rem);
+    /* border: 2px solid green; */
     font-weight: bold;
 
 }
-
-#dash{
-   color: var(--main-text);
-
+.salad{
+    color:var(--main-text);
+    
 }
+
+/* #dash{
+   color: var(--main-text);
+   border: 3px solid red;
+   background-color: black;
+
+
+} */
 
 .dash span{
 color: var(--primary-color);
+
 }
+
 
 .topo{
 /* border: 3px solid green; */
@@ -417,7 +427,7 @@ color: var(--text);
 
 footer{
     height: 4pc;
-    margin-top: 18%;
+    margin-top: 40%;
     text-align: center;
 }
 
