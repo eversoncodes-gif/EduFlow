@@ -21,13 +21,24 @@
         <div class="dash"><span>EduFlow</span> - <span id="dash">Dashboard</span>
         </div>
       <header class="topo">
-       
-       
+              
              <div class="logo">
-                <h1>EduFlow</h1>
+                 <h1>EduFlow</h1>
+                 <button class="menu-toggle">  ☰ </button>
             </div>
+            <div class="acoes-topo">
+                 <button class="notificacao"><i class="fa-solid fa-bell"></i>
+                <span class="badge">3</span></button>
+            </div>
+            
            <div class="usuario">
-            <span>Funcionario Administrativo</span>
+             <i class="fa-solid fa-circle-user"></i>
+             <div class="dados-usuario">
+             <span>Funcionario Administrativo</span>
+             <small>Administrador</small>
+             <i class="fa-solid fa-chevron-down"></i>
+           
+               </div>
             </div>
         
           <!-- <div class="navegar">
@@ -137,7 +148,7 @@
                      <input
                         type="search"
                         id="pesquisar-aluno"
-                        placeholder="Pesquisar aluno..."
+                        placeholder="Pesquisar aluno...."
                     >
                      <button onclick="abrirDocument()" id="adicionar-aluno">
                         &plus; Adicionar aluno

@@ -35,14 +35,14 @@ font-family: var(--font-heading);
     margin-left: 1%;
     padding: 10px;
     gap: 20px;
-    padding-left: 4%;
-    font-family: var(--font-logo);
-    font-size: clamp(1.5rem,5vw,2rem);
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem,5vw,3rem);
     font-weight: bold;
 
 }
 
 #dash{
+   font-weight: 300;
    color: var(--main-text);
 
 }
@@ -50,14 +50,15 @@ font-family: var(--font-heading);
 .dash span{
 color: var(--primary-color);
 }
+/* aqui e tudo do topo  */
 
 .topo{
 /* border: 3px solid green; */
-padding: 3px;
+padding: 3px 20px;
 display: flex;
 align-items: center;
-justify-content: center;
-flex-direction: row wrap;
+justify-content: space-between;
+flex-direction: row;
 gap: 60px;
 background-color: var(--primary-color);
 color: var(--card);
@@ -70,8 +71,12 @@ height: 70px;
 }
 
 .logo{
-flex: 1;
+flex: 2;
 text-align: center;
+padding-left: 1%;
+display:flex;
+align-items: center;
+gap: 20px;
 /* border: 2px solid grey; */
 
 }
@@ -83,27 +88,108 @@ text-align: center;
     /* color: var(--primary-color); */
 }
 
+/* aqui e o botao do menu */
+
+.menu-toggle{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 27px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+
+/* aqui sao as accoes do topo, aquelas que estao na direita */
+.acoes-topo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 4;
+    gap:25px;
+    /* border: 2px solid black; */
+    
+}
 
 
+.notificacao{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+background: transparent;
+color: var(--card);
+font-size: 22px;
+cursor: pointer;
+padding: 8px;
+    /* background-color: var(--primary-color);
+   border: none; 
+   color: var(--card); */
+}
+
+.badge{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--error);
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+/* .notificao span{
+    /* border-radius: 33px;
+    background-color: red;
+    color: var(--card); */
+
+
+/* aqui e o utilizador */
 
 .usuario{
-flex: 5;
-text-align: end;
-margin-right:3%;
-/* border: #00BB94 solid 3px; */
+/* flex: 3; */
+display: flex;
+align-items:center;
+/* justify-content:space-between; */
+gap: 10px;
+/* margin-right:3%; */
+border: #00BB94 solid 3px;
 }
-.usuario span{
-    font-size: 16px;
+/* icone do utilizador */
+.usuario > i:first-child{
+    font-size: 32px;
+}
+
+/* informacoes do utilizador */
+.dados-usuario{
+display: flex;
+flex-direction: column;
+line-height: 1.2;
+}
+.dados-usuario span{
+    font-size: 13px;
     font-weight: 500;
     font-family: var(--font-heading)
 }
+.dados-usuario small{
+    font-size: 10px;
+}
 
+/* aqui e a seta */
+.usuario > i:last-child{
+    font-size: 11px;
+    margin-left: 3px;
+}
+/* aqui e o layout da pagina */
 .layout{
 /* border: solid red 2px; */
  display: flex;
  align-items: center;
  justify-content: space-between;
- gap: 23px;
+ gap: 17px;
  width: 100%;
  /* box-shadow: -4px 12px 22px rgba(0,0,0,0.62) ; */
 }
@@ -150,7 +236,7 @@ text-align: center;
 
     display:flex;
     align-items: center;
-    gap: 14px;
+    gap: 24px;
 
     /* border: solid 2px var(--primary-color); */
     font-size:  20px;
@@ -309,10 +395,11 @@ width: 100%;
     padding: 11px;
 }
 table td button{
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
-    background: var(--card);
+   background: var(--card);
+   color: var(--main-text);
 }
 
 
@@ -333,7 +420,7 @@ table td button{
 #pesquisar-aluno{
  height: 2.4rem;
  width: 50%;
- padding: 20px;
+ padding: 17px;
  color: var(--main-text);
  font-family: var(--font-heading);
  border-radius: 8px;
@@ -349,7 +436,7 @@ table td button{
     font-family: var(--font-heading); 
     padding: 18px;
     border-radius: 8px;
-     font-size: 18px;
+     font-size: 16px;
 transition: 0.3s ease-in;    
 }
 
@@ -403,7 +490,7 @@ color: var(--text);
     font-family: var(--font-heading); 
     padding: 18px;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s ease-in;  
     border:none;  
 }
