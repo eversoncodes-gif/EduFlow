@@ -3,153 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Dashboards,Descricao do sistema, gerir clientes">
-    <meta name="author" content="Everson Anselmo Muianga">
-    <meta name="description" content="A dashboard do EduFLow, aqui eles terao a base imicial do projecto, a parte administraiva">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>EduFlow - Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css.da.pasgina/dashboard.css">
-
-    <title>EduFlow - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <!-- CABEÇALHO -->
-        <div class="dash"><span>EduFlow</span> - <span id="dash">Dashboard</span>
+    <header class="topo">
+        <div class="logo">
+            <h1>EduFlow</h1>
         </div>
-      <header class="topo">
-       
-       
-             <div class="logo">
-                <h1>EduFlow</h1>
-            </div>
-           <div class="usuario">
-            <span>Funcionario Administrativo</span>
-            </div>
-        
-          <!-- <div class="navegar">
-              <nav class="navegar no dashboard">
-                <a href="#Dashboard">Dash board</a>
-                <a href="#alunos">Alunos</a> 
-                <a href="#documentos">Documentos</a>
-                <a href="#pagamentos">Pagamentos</a>
-                <a href="" id="sair">Sair</a>
-               
-           </nav>
-         </div> -->
-      </header>
-        <!-- ESTRUTURA PRINCIPAL -->
-       <div class="layout">
-          <!-- MENU LAteral -->
-           <aside class="sidebar">
-              
+        <div class="usuario">
+            <i class="fa-solid fa-user-circle"></i>
+            <span>Funcionário Administrativo</span>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
             <nav class="menu">
-                <a href="#dashboard" class="menu-link">
-                  <i class="fa-solid fa-house"></i><span>Dashboard</span>
+                <a href="#dashboard" class="menu-link active">
+                    <i class="fa-solid fa-house"></i> Dashboard
                 </a>
                 <a href="#alunos" class="menu-link">
-                   <i class="fa-solid fa-users"></i> <span>Alunos </span>
+                    <i class="fa-solid fa-users"></i> Alunos
                 </a>
                 <a href="#documentos" class="menu-link">
-               <i class="fa-solid fa-file"></i> <span> Documentos</span>
+                    <i class="fa-solid fa-file"></i> Documentos
                 </a>
                 <a href="#pagamentos" class="menu-link">
-                  <i class="fa-solid fa-credit-card"></i><span>Pagamentos</span> 
+                    <i class="fa-solid fa-credit-card"></i> Pagamentos
                 </a>
                 <a href="#relatorios" class="menu-link">
-                   <i class="fa-solid fa-chart-column"></i><span>Relatórios</span> 
+                    <i class="fa-solid fa-chart-column"></i> Relatórios
                 </a>
                 <a href="#configuracoes" class="menu-link">
-                    <i class="fa-solid fa-gear"></i> <span>Configurações</span>
+                    <i class="fa-solid fa-gear"></i> Configurações
                 </a>
-
-                <a href="login.html" class="menu-link sair" id="sair">
-                    Sair
+                <a href="login.html" class="menu-link sair">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
                 </a>
-
             </nav>
-           </aside>
+        </aside>
 
-             <!-- Conteudo Principal -->
         <main>
-            
-
             <!-- DASHBOARD -->
             <section id="dashboard" class="pagina">
-
                 <div class="titulo-pagina">
-                    <h2>Dashboard</h2> 
-                    <i class=""></i>
-
-                    <p>
-                        Bem-vindo ao EduFlow, sistema de gestão e cadastro estudantil.
-                    </p>
+                    <h2>Dashboard</h2>
+                    <p>Bem-vindo ao EduFlow, sistema de gestão e cadastro estudantil.</p>
                 </div>
 
-
-                <!-- CARDS DE RESUMO -->
                 <div class="cards-resumo">
-
                     <div class="card">
+                        <div class="card-icone roxo"><i class="fa-solid fa-users"></i></div>
                         <h3>Total de alunos</h3>
                         <strong>1.250</strong>
                     </div>
-
                     <div class="card">
+                        <div class="card-icone verde"><i class="fa-solid fa-user-plus"></i></div>
                         <h3>Novos alunos</h3>
                         <strong>32</strong>
                     </div>
-
                     <div class="card">
+                        <div class="card-icone azul"><i class="fa-solid fa-file"></i></div>
                         <h3>Documentos</h3>
                         <strong>18</strong>
                     </div>
-
                     <div class="card">
+                        <div class="card-icone amarelo"><i class="fa-solid fa-dollar-sign"></i></div>
                         <h3>Pagamentos pendentes</h3>
                         <strong>7</strong>
                     </div>
-
                 </div>
-
             </section>
-
 
             <!-- ALUNOS -->
             <section id="alunos" class="pagina">
-
                 <div class="titulo-pagina">
-
                     <h2>Alunos</h2>
-
-                    <p>
-                        Consulte e faça a gestão dos alunos cadastrados.
-                    </p>
-
+                    <p>Consulte e faça a gestão dos alunos cadastrados.</p>
                 </div>
+                
                 <div class="acoes">
-
-                     <input
-                        type="search"
-                        id="pesquisar-aluno"
-                        placeholder="Pesquisar aluno..."
-                    >
-                     <button onclick="abrirDocument()" id="adicionar-aluno">
-                        &plus; Adicionar aluno
+                    <div class="pesquisa">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="search" placeholder="Pesquisar aluno...">
+                    </div>
+                    <button id="adicionar-aluno">
+                        <i class="fa-solid fa-plus"></i> Adicionar aluno
                     </button>
-
                 </div>
 
-                  <!-- TABELA DE ALUNOS -->
                 <div class="tabela-container">
-
                     <table>
-
                         <thead>
-
                             <tr>
                                 <th>Nº</th>
                                 <th>Nome</th>
@@ -158,118 +108,89 @@
                                 <th>Estado</th>
                                 <th>Ações</th>
                             </tr>
-
                         </thead>
-
-                        <tbody id="lista-alunos">
-                           <!-- linha 1 -->
+                        <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>joao felix Figueiro</td>
-                                <td>12ª classe</td>
+                                <td>01</td>
+                                <td>João da Silva</td>
+                                <td>12ª Classe</td>
                                 <td>A</td>
-                                <td><span class="ativo">Activo</span></td>
-                                <td><i></i><i></i><i></i></td>
-
+                                <td><span class="estado ativo">Ativo</span></td>
+                                <td class="botoes-acao">
+                                    <button class="btn-ver"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="btn-excluir"><i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
-                            <!-- linha 2 -->
-                             <tr>
-                                <td>2</td>
-                                <td>tania felix Figueiro</td>
-                                <td>11ª classe</td>
-                                <td>A</td>
-                                <td><span class="ativo">Activo</span></td>
-                                <td><i></i><i></i><i></i></td>
-
-                            </tr>
-                            <!-- llinha 3 -->
                             <tr>
-                                <td>3</td>
-                                <td>Everson Muianga</td>
-                                <td>12ª classe</td>
+                                <td>02</td>
+                                <td>Maria João</td>
+                                <td>11ª Classe</td>
                                 <td>B</td>
-                                <td> <span class="pendente">Pendente</span></td>
-                                <td><i></i><i></i><i></i></td>
+                                <td><span class="estado ativo">Ativo</span></td>
+                                <td class="botoes-acao">
+                                    <button class="btn-ver"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="btn-excluir"><i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
-                            <!-- linha 4 -->
                             <tr>
-                                <td>4</td>
-                                <td>Anselmo Ernesto</td>
-                                <td>10ª classe</td>
+                                <td>03</td>
+                                <td>Pedro Moisés</td>
+                                <td>10ª Classe</td>
+                                <td>A</td>
+                                <td><span class="estado pendente">Pendente</span></td>
+                                <td class="botoes-acao">
+                                    <button class="btn-ver"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="btn-excluir"><i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Ana Paula</td>
+                                <td>12ª Classe</td>
                                 <td>C</td>
-                                <td><span class="inativo">Inativo</span> </td>
-                                <td><i></i><i></i><i></i></td>
-
+                                <td><span class="estado ativo">Ativo</span></td>
+                                <td class="botoes-acao">
+                                    <button class="btn-ver"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="btn-excluir"><i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
-                            <!-- linha 5 -->
-                                 <tr>
-                                <td>5</td>
-                                <td>Everson Muianga</td>
-                                <td>9ª classe</td>
-                                <td>D</td>
-                                <td><span class="ativo">Activo</span></td>
-                                <td><i></i><i></i><i></i></td>
+                            <tr>
+                                <td>05</td>
+                                <td>Carlos Manuel</td>
+                                <td>9ª Classe</td>
+                                <td>B</td>
+                                <td><span class="estado inativo">Inativo</span></td>
+                                <td class="botoes-acao">
+                                    <button class="btn-ver"><i class="fa-solid fa-eye"></i></button>
+                                    <button class="btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="btn-excluir"><i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
-
-
-
-
-
-                            <!--
-                                Os alunos serão adicionados
-                                aqui através do JavaScript.
-                            -->
-
                         </tbody>
-
                     </table>
-
                 </div>
-
             </section>
-
 
             <!-- DOCUMENTOS -->
             <section id="documentos" class="pagina">
-
                 <div class="titulo-pagina">
-
                     <h2>Documentos</h2>
-
-                    <p>
-                        Gestão dos documentos dos alunos.
-                    </p>
-
+                    <p>Gestão dos documentos dos alunos.</p>
                 </div>
-
-
                 <div class="acoes">
-
-                    <button onclick="abrirDocument()" id="adicionar-documento">
-                        &plus; Adicionar documento
+                    <button id="adicionar-documento">
+                        <i class="fa-solid fa-plus"></i> Adicionar documento
                     </button>
-
                 </div>
-
-
                 <div class="documentos-lista">
-                    <img src="imgEduFLow/text-editor.png" alt="Documento azul com uma caneta por cima">
-
-                    <p>
-                        Ainda não existem documentos cadastrados.
-                    </p>
-
+                    <p>Ainda não existem documentos cadastrados.</p>
                 </div>
-
             </section>
-    
-         </main>
-      </div>
-
-       
-    <footer><p>&COPY;2026 EmbersTech</p></footer>
-
-    
+        </main>
+    </div>
+    <footer><p>&copy; 2026 EmbersTech</p></footer>
 </body>
-  <script src="java-script/inicio.js" ></script>
-</html>
