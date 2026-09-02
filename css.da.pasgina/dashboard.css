@@ -37,7 +37,7 @@ font-family: var(--font-heading);
     gap: 20px;
     font-family: var(--font-heading);
     font-size: clamp(1.5rem,5vw,3rem);
-    font-weight: bold;
+    font-weight: 570;
 
 }
 
@@ -96,7 +96,14 @@ gap: 20px;
     border: none;
     font-size: 27px;
     margin-left: 52px;
-    cursor: pointer;
+transition: 0.2s ease-in;
+}
+.menu-toggle:hover{
+    background-color: #6c63FF;
+     cursor: pointer;
+     transform: translateY(3px);
+     
+     /* padding: 8px 3px 4px; */
 }
 
 /* aqui sao as accoes do topo, aquelas que estao na direita */
@@ -235,7 +242,6 @@ text-align: center;
 } */
 
 .menu-link{
-
     display:flex;
     align-items: center;
     gap: 24px;
@@ -300,22 +306,83 @@ padding: 12px;
 }
 
 .cards-resumo{
-display: flex;
-align-items: center;
-justify-content:space-between;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 15px;
+/* align-items: center;
+justify-content:space-between; */
 
 }
 .card{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:55px 1fr;
+    align-items: center;
+    gap: 15px;
     background-color: var(--card);
-    padding: 20px;
+    padding: 12px;
     color: var(--main-text);
-    border-radius: 13px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 2px 8px 16px rgba(0,0,0,0.5 alpha);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.45);
     cursor:pointer;
+    transition: 0.3s ease;
 }
+
+/* aqui a parte do card que tem o icone */
+.card-icone{
+    /* border: solid 2px blue; */
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #efedff;
+    color: var(--primary-color);
+
+}
+.card-icone i{
+    font-size: 26px;
+}
+/* aqui sao as corees de cada icone das dashboard cards */
+.fa-user-plus{
+    color: var(--sucess);
+}
+
+.fa-file{
+    color: rgba(108, 108, 232, 0.84);
+}
+.fa-money-bill{
+    color: gold;
+}
+
+/* agora sao as informacoes do card */
+.card-info{
+    display: flex;
+    flex-direction: column;
+}
+.card-info h3{
+    font-size: 13px;
+    font-weight: 512;
+    margin-bottom: 2px;
+}
+
+.card-info strong{
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.card-info small{
+    font-size: 11px;
+    color: #636e72;
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+
 
 /* aqui e a parte dos alunos  */
 
@@ -324,9 +391,9 @@ justify-content:space-between;
     grid-template-columns: repeat(2,1fr);
     /* border: 3px solid blue; */
     background-color: var(--card);
-    gap: 40px;
+    gap: 30px;
     box-shadow: -2px 4px 8px var(--card);
-    border-radius: 20px;
+    border-radius: 15px;
     
 }
 
@@ -377,7 +444,7 @@ width: 100%;
 .tabela-container table{
     margin-top: 0;
  width: 100%;
- border: 1px solid grey;
+ /* border: 1px solid grey; */
  /* padding:22px; */
  }
 
@@ -394,12 +461,12 @@ width: 100%;
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
-    gap: 13px;
+    gap: 20px;
     text-align: center;
     padding: 11px;
 }
 table td button{
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     border: none;
    background: var(--card);
@@ -417,18 +484,26 @@ table td button{
     align-items: center;
     justify-content:center;
     /* border: 3px solid gray; */
-    gap: 40px;
+    gap: 30px;
     
+}
+.acoes i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 20px;
 }
 
 #pesquisar-aluno{
  height: 2.4rem;
  width: 50%;
- padding: 17px;
+ padding: 16px;
  color: var(--main-text);
  font-family: var(--font-heading);
  border-radius: 8px;
  font-size: 20px;
+ border: 2px solid var(--primary-color);
  
 }
 
@@ -438,7 +513,7 @@ table td button{
     border: none;
     color: var(--card);
     font-family: var(--font-heading); 
-    padding: 18px;
+    padding: 15px;
     border-radius: 8px;
      font-size: 16px;
 transition: 0.3s ease-in;    
@@ -516,7 +591,12 @@ color: var(--text);
     /* background-color: #00BB94; */
    /* border: 4px solid red; */
 }
-
+/* 
+.whats{
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+} */
 footer{
     height: 4pc;
     margin-top: 18%;
