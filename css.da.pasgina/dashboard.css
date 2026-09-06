@@ -270,6 +270,42 @@ width: 100%;
 /* border: 2px solid greenyellow; */
 
 }
+/* aqui sao as classes dos dados da tabela,nesse caso os botoes de visualizar, editar e excluir */
+.acoes-tabela{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 6px;                      
+}
+
+.btn-acao{
+    background-color:var(--card);
+    border:none;
+    color:var(--main-text);
+    padding: 4px 8px;
+    cursor:pointer;
+    border-radius:4px;
+    transition:0.2s ease-in-out;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.btn-acao.visualizar:hover {
+    color: var(--secondary-color);
+    background: #f0f0ff;
+}
+
+.btn-acao.editar:hover {
+    color: var(--antention);
+    background: #fff8e1;
+}
+
+.btn-acao.excluir:hover {
+    color: var(--error);
+    background: #ffebee;
+}
+
+
 /*as classes dos  spans do tabela */
 .ativo{
     color: var(--sucess);
