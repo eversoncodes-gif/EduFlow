@@ -345,14 +345,15 @@ justify-content:space-between; */
     font-size: 26px;
 }
 /* aqui sao as corees de cada icone das dashboard cards */
-.fa-user-plus{
+.card-icone .fa-user-plus{
     color: var(--sucess);
 }
 
-.fa-file{
+.card-icone .fa-file{
     color: rgba(108, 108, 232, 0.84);
 }
-.fa-money-bill{
+
+.card-icone.fa-money-bill{
     color: gold;
 }
 
@@ -417,6 +418,8 @@ width: 100%;
 /* border: 2px solid greenyellow; */
 
 }
+
+
 /*as classes dos  spans do tabela */
 .ativo{
     color: var(--sucess);
@@ -457,14 +460,15 @@ width: 100%;
     border-top-right-radius:20px ; */
 }
 
-.tabela-container table td{
-    /* display: flex; */
+/* .tabela-container table td{
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     text-align: center;
     padding: 11px;
-}
+} */
+
 table td button{
     font-size: 24px;
     cursor: pointer;
@@ -473,50 +477,100 @@ table td button{
    color: var(--main-text);
 }
 
+/* aqui sao mesmo os icones de editar,visualiizar e excluir da tabela */
+.acoes-tabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    border: 3px solid #00BB94;
+}
 
+/* as acoes de pesquisa */
+.campo-pesquisa{
+    border: 2px solid var(--main-text);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 12px; */
+    width: 50%;
+    height: 42px;
+    background-color: var(--card);
+    padding:0 14px;
+    border-radius: 8px;
 
+}
+.campo-pesquisa i{
+    color: var(--primary-color);
+    font-size: 16px;
+}
 
+/* #alunos .acoes{
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+} */
 
 /* aqui sao as funcoes de pesquisa e adiconar  */
-
 .acoes{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:flex-end;
     /* border: 3px solid gray; */
-    gap: 30px;
+    width: 100%;
+    gap: 25px;
     
 }
-.acoes i{
+/* .acoes i{
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--secondary-color);
     font-size: 20px;
-}
+} */
 
 #pesquisar-aluno{
- height: 2.4rem;
- width: 50%;
- padding: 16px;
+ height: 100%;
+ width: 100%;
+ padding:0  10px;
  color: var(--main-text);
  font-family: var(--font-heading);
  border-radius: 8px;
- font-size: 20px;
- border: 2px solid var(--primary-color);
+ font-size: 14px;
+ border: none;
+ outline: none;
+color: var(--main-text);
+background: transparent;
+font-family: var(--font-main);
  
 }
 
 #adicionar-aluno{
-    /* height: 2.3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 18px;
     background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--card);
+    font-family: var(--font-heading);
+    cursor: pointer;
+    font-size: 14px;
+    /* margin-right: 13px; */
+    /* height: 2.3rem; */
+    /* background-color: var(--secondary-color);
     border: none;
     color: var(--card);
     font-family: var(--font-heading); 
     padding: 15px;
     border-radius: 8px;
-     font-size: 16px;
-transition: 0.3s ease-in;    
+     font-size: 10px;
+transition: 0.3s ease-in;     */
 }
 
 #adicionar-aluno:hover{

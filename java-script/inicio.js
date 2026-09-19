@@ -1,3 +1,10 @@
+let 
+
+
+
+
+
+
 const abrir=document.getElementById("abrir");
 
 abrir.addEventListener("click", ()=>{
@@ -16,3 +23,4 @@ function abrirDocument(){
 }
 // const abrirDocument=document.querySelector("adicionar-aluno");
 // abrirDocument.addEventListener("click")
+

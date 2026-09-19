@@ -32,10 +32,6 @@ body{
     line-height: 1.8;
     font-family: var(--font-main); 
 }
-
-
-
-
 .topo{
     position: fixed;
     top: 0;

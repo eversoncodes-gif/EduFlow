@@ -156,12 +156,13 @@
                 </div>
                 <div class="acoes">
                     <!-- <i class="fa-solid fa-plus"></i> -->
-                     <i class="fa-solid fa-search"></i>
-                     <input
+                     <div class="campo-pesquisa">
+                        <input
                         type="search"
                         id="pesquisar-aluno"
                         placeholder="Pesquisar aluno..."
-                    >
+                    ><i class="fa-solid fa-search"></i>
+                    </div>
                      <button onclick="abrirDocument()" id="adicionar-aluno">
                         &plus; Adicionar aluno
                     </button>
@@ -194,10 +195,10 @@
                                 <td>12ª classe</td>
                                 <td>A</td>
                                 <td><span class="ativo">Activo</span></td>
-                                <td><button><i class="mdi mdi-eye-outline"></i>
-                                </button> 
+                                <td class="acoes-tabela">
+                                <button><i class="mdi mdi-eye-outline"></i></button> 
                                 <button><i class="mdi mdi-pencil-outline"></i></button>
-                            <button><i class="mdi mdi-trash-can-outline"></i></button>
+                                <button><i class="mdi mdi-trash-can-outline"></i></button>
                             
                             </td>
 
@@ -209,7 +210,7 @@
                                 <td>11ª classe</td>
                                 <td>A</td>
                                 <td><span class="ativo">Activo</span></td>
-                                <td>
+                                <td class="acoes-tabela">
                                     <button><i class="mdi mdi-eye-outline"></i></button> 
                                     <button><i class="mdi mdi-pencil-outline"></i></button>
                                     <button><i class="mdi mdi-trash-can-outline"></i></button>
@@ -223,7 +224,7 @@
                                 <td>12ª classe</td>
                                 <td>B</td>
                                 <td> <span class="pendente">Pendente</span></td>
-                                <td>
+                                <td class="acoes-tabela">
                                     <button><i class="mdi mdi-eye-outline"></i></button> 
                                     <button><i class="mdi mdi-pencil-outline"></i></button>
                                     <button><i class="mdi mdi-trash-can-outline"></i></button>
@@ -236,7 +237,7 @@
                                 <td>10ª classe</td>
                                 <td>C</td>
                                 <td><span class="inativo">Inativo</span> </td>
-                                <td>
+                                <td class="acoes-tabela">
                                     <button><i class="mdi mdi-eye-outline"></i></button> 
                                     <button><i class="mdi mdi-pencil-outline"></i></button>
                                     <button><i class="mdi mdi-trash-can-outline"></i></button>
@@ -250,16 +251,12 @@
                                 <td>9ª classe</td>
                                 <td>D</td>
                                 <td><span class="ativo">Activo</span></td>
-                                <td>
+                                <td class="acoes-tabela">
                                     <button><i class="mdi mdi-eye-outline"></i></button> 
                                     <button><i class="mdi mdi-pencil-outline"></i></button>
                                     <button><i class="mdi mdi-trash-can-outline"></i></button>
                                 </td>
                             </tr>
-
-
-
-
 
                             <!--
                                 Os alunos serão adicionados
