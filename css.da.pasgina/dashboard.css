@@ -10,9 +10,9 @@
     --fundo:#f5f5f7;
     --card:#ffffff;
     --main-text:#2D3436;
-    --sucess:#00BB94;
-    --antention:#FDCB6E;
-    --error:#E17055;
+    --sucess:#087f5b;
+    --antention:#946200;
+    --error:#b42318;
     --text:#12124e;
     --info:rgb(8, 8, 64);
     --font-main:"Roboto",sans-serif;
@@ -413,79 +413,129 @@ justify-content:space-between; */
      grid-column:span 2; /*aqui era suposto espandir a tabela duas vezes mais que as outras areas */
 }
 
+/* aqui a parte das tabelas  */
+/* Estrutura exterior da tabela */
 .tabela-container{
 width: 100%;
-/* border: 2px solid greenyellow; */
-
+overflow-x: auto;
+background-color: var(--card);
+border: 1px solid #e8e8ef;
+border-radius: 12px;
 }
 
+/* Tabela */
+.tabela-container table{
+     width: 100%;
+     border-collapse: collapse;
+     border-spacing: 0;
+     text-align: left;
+     /* border-color: #E17055; */
+ /* border: 1px solid grey; */
+ /* padding:22px; */
+ }
+/* Cabecalho */
+
+.tabela-container table th{
+    padding: 15px 18px;
+    background-color: #f5f5fa;
+    color: var(--main-text);
+    font-family: var(--font-heading);
+    font: size 13px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* celulas */
+.tabela-container table td{
+   padding: 15px 18px;
+   color: var(--main-text);
+   font-size: 14px;
+   text-align: center;
+   border-bottom: 1px solid #eeeeF3;
+}
+
+/* Ultima linha sem separador */
+.tabela-container table tbody tr:last-child td{
+    border-bottom: none;
+
+}
+/* Realce subtil ao passar o rato */
+.tabela-container table tbody tr:hover{
+    background-color: #fafaff;
+}
 
 /*as classes dos  spans do tabela */
+.ativo,
+.pendente,
+.inativo{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
 .ativo{
     color: var(--sucess);
-    background-color: var(--fundo);
-    border-radius: 5px;
-    padding: 5px;
+    background-color:#e1f7ee;
+    
 }
 
 .pendente{
     color: var(--antention);
-    background-color: var(--fundo);
-    padding: 5px;
-    border-radius: 7px;
+    background-color:#fff3d6 ;
+    
 }
 
 .inativo{
  color: var(--error);
- padding: 5px;
- border-radius: 5px;
- background-color: var(--fundo);
+background-color: #fde8e7;
 
 }
 
-
-.tabela-container table{
-    margin-top: 0;
- width: 100%;
- /* border: 1px solid grey; */
- /* padding:22px; */
- }
-
-.tabela-container table th{
-    color: var(--main-text);
-    font-family: var(--font-heading);
-    background-color: var(--fundo);
-    padding:10px;
-    /* border-top-left-radius: 20px;
-    border-top-right-radius:20px ; */
-}
-
-/* .tabela-container table td{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: center;
-    padding: 11px;
-} */
-
-table td button{
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-   background: var(--card);
-   color: var(--main-text);
-}
 
 /* aqui sao mesmo os icones de editar,visualiizar e excluir da tabela */
 .acoes-tabela{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
-    border: 3px solid #00BB94;
+    gap: 8px;
+    /* border: 3px solid #00BB94; */
+}
+.acoes-tabela button i{
+    font-size: 20px;
+}
+ .acoes-tabela button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+    color: var(--main-text);
+    font-size:17px;
+    cursor:pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    }
+/* acao de visualizar  */
+.acoes-tabela .btn-visualizar:hover{
+    background-color: #efedff;
+    color: var(--primary-color);
 }
 
+/* acao de editar */
+.acoes-tabela .btn-editar:hover{
+    background-color: #e3f5ff;
+    color: #0879b9;
+}
+/* eliminar */
+.acoes-tabela .btn-excluir:hover{
+    background-color: #fde8e7;
+    color: #b42318;
+}
 /* as acoes de pesquisa */
 .campo-pesquisa{
     border: 2px solid var(--main-text);
@@ -575,10 +625,38 @@ transition: 0.3s ease-in;     */
 
 #adicionar-aluno:hover{
     background-color:var(--primary-color);
-    transform: scaleX(1.1);
+    transform: tranlateY(-2px);
     cursor: pointer;
 }
 /* aqui sao as acoes mais fechadas  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* aqui sao os documentos */
