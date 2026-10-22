@@ -538,7 +538,7 @@ background-color: #fde8e7;
 }
 /* as acoes de pesquisa */
 .campo-pesquisa{
-    border: 2px solid var(--main-text);
+    border: 2px solid var(--primary-color);
     display: flex;
     align-items: center;
     /* justify-content: center; */
