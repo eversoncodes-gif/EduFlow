@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Everson Muianga - EmbersTech">
+  <meta name="description" content="EduFlow - Sistema de pré-matrícula online para escolas de Moçambique">
+  <title>EduFlow - Pré-Matrícula Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.da.pasgina/cadastro.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="cabecalho__conteudo">
+      <h1 class="cabecalho__logo"><h1>EduFlow</h1>
+      <p class="cabecalho__sub"><p>Pré-matrícula a partir de casa</p>
+      <p>Facilitando Processos e melhorando a educacao</p>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="formulario-wrapper" aria-labelledby="titulo-formulario">
+      
+      <header class="formulario-header">
+        <h2 id="titulo-formulario">Ficha de Pré-Matrícula</h2>
+        <p>Encarregado preenche em casa. Só vai à escola para levantar recibo.</p>
+        
+        <nav class="progresso" aria-label="Progresso do formulário">
+          <span class="progresso__item progresso__item--ativo"></span>
+          <span class="progresso__item"></span>
+          <span class="progresso__item"></span>
+          <span class="progresso__item"></span>
+          <span class="progresso__item"></span>
+        </nav>
+      </header>
+
+      <form id="formCadastro" class="formulario" novalidate>
+
+        <!-- SECÇÃO 1 -->
+        <fieldset class="seccao seccao--ativa" id="s1">
+          <legend class="seccao__titulo">1. Dados do Aluno</legend>
+          
+          <div class="grid grid--2">
+            <div class="campo">
+              <label for="nome" class="campo__label">Nome completo <span aria-hidden="true">*</span></label>
+              <input type="text" id="nome" class="campo__input" placeholder="Ex: João Félix Figueiredo" required autocomplete="name">
+            </div>
+            <div class="campo">
+              <label for="apelido" class="campo__label">Apelido como no BI</label>
+              <input type="text" id="apelido" class="campo__input" placeholder="Figueiredo">
+            </div>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="campo">
+              <label for="nasc" class="campo__label">Data nascimento <span aria-hidden="true">*</span></label>
+              <input type="date" id="nasc" class="campo__input" required>
+            </div>
+            <div class="campo">
+              <label for="sexo" class="campo__label">Sexo</label>
+              <select id="sexo" class="campo__input">
+                <option>Masculino</option>
+                <option>Feminino</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="natural" class="campo__label">Naturalidade / Distrito</label>
+              <input type="text" id="natural" class="campo__input" placeholder="Ex: Maxixe">
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="campo">
+              <label for="bi" class="campo__label">Nº BI / Cédula</label>
+              <input type="text" id="bi" class="campo__input" placeholder="Ex: 110101..." inputmode="numeric">
+            </div>
+            <div class="campo">
+              <label for="nuit" class="campo__label">NUIT</label>
+              <input type="text" id="nuit" class="campo__input" placeholder="Opcional" inputmode="numeric">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="classe" class="campo__label">Classe pretendida <span aria-hidden="true">*</span></label>
+            <select id="classe" class="campo__input" required>
+              <option value="">Escolher...</option>
+              <optgroup label="Ensino Primário">
+                <option>1ª Classe</option><option>2ª Classe</option><option>3ª Classe</option>
+                <option>4ª Classe</option><option>5ª Classe</option><option>6ª Classe</option>
+              </optgroup>
+              <optgroup label="ESG1 - 1º Ciclo Secundário">
+                <option>7ª Classe</option><option>8ª Classe</option><option>9ª Classe</option>
+              </optgroup>
+              <optgroup label="ESG2 - 2º Ciclo Secundário">
+                <option>10ª Classe</option><option>11ª Classe</option><option>12ª Classe</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- SECÇÃO 2 -->
+        <fieldset class="seccao" id="s2">
+          <legend class="seccao__titulo">2. Dados do Encarregado</legend>
+          <div class="campo">
+            <label for="encNome" class="campo__label">Nome do encarregado <span aria-hidden="true">*</span></label>
+            <input type="text" id="encNome" class="campo__input" required>
+          </div>
+          <div class="grid grid--2">
+            <div class="campo">
+              <label for="parentesco" class="campo__label">Parentesco</label>
+              <select id="parentesco" class="campo__input"><option>Pai</option><option>Mãe</option><option>Tio/Tia</option><option>Avó/Avô</option><option>Outro</option></select>
+            </div>
+            <div class="campo">
+              <label for="encTel" class="campo__label">Telefone / WhatsApp <span aria-hidden="true">*</span></label>
+              <input type="tel" id="encTel" class="campo__input" placeholder="84..." required>
+            </div>
+          </div>
+          <div class="grid grid--2">
+            <div class="campo">
+              <label for="encBi" class="campo__label">BI do encarregado</label>
+              <input type="text" id="encBi" class="campo__input">
+            </div>
+            <div class="campo">
+              <label for="maeNome" class="campo__label">Nome da mãe</label>
+              <input type="text" id="maeNome" class="campo__input">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SECÇÃO 3 -->
+        <fieldset class="seccao" id="s3">
+          <legend class="seccao__titulo">3. Percurso Escolar</legend>
+          <div class="campo">
+            <label for="jaEstudou" class="campo__label">Já estudou nesta escola?</label>
+            <select id="jaEstudou" class="campo__input"><option value="nao">Não - Aluno novo</option><option value="sim">Sim - Renovação</option></select>
+          </div>
+          <div id="campoAntigo" class="bloco-condicional">
+            <div class="grid grid--2">
+              <div class="campo"><label for="classeAntiga" class="campo__label">Classe ano passado</label><select id="classeAntiga" class="campo__input"><option>6ª</option><option>7ª</option><option>8ª</option><option>9ª</option><option>10ª</option><option>11ª</option></select></div>
+              <div class="campo"><label for="turmaAntiga" class="campo__label">Turma</label><input type="text" id="turmaAntiga" class="campo__input" placeholder="Ex: B"></div>
+            </div>
+          </div>
+          <div class="campo"><label for="ultimaEscola" class="campo__label">Última escola frequentada</label><input type="text" id="ultimaEscola" class="campo__input"></div>
+        </fieldset>
+
+        <!-- SECÇÃO 4 -->
+        <fieldset class="seccao" id="s4">
+          <legend class="seccao__titulo">4. Documentos e Saúde</legend>
+          <p class="campo__ajuda">Assinale o que já tem</p>
+          <div class="checklist">
+            <label class="check"><input type="checkbox" id="docBi"> Cópia BI</label>
+            <label class="check"><input type="checkbox" id="docCertidao"> Certidão</label>
+            <label class="check"><input type="checkbox" id="docFotos"> 2 Fotos</label>
+            <label class="check"><input type="checkbox" id="docCertificado"> Certificado</label>
+          </div>
+          <div class="campo"><label for="endereco" class="campo__label">Bairro / Endereço</label><input type="text" id="endereco" class="campo__input" placeholder="Ex: Chambone - Maxixe"></div>
+          <div class="campo"><label for="saude" class="campo__label">Problema de saúde (opcional)</label><textarea id="saude" class="campo__input campo__input--area" rows="3"></textarea></div>
+        </fieldset>
+
+        <!-- SECÇÃO 5 -->
+        <fieldset class="seccao" id="s5">
+          <legend class="seccao__titulo">5. Confirmação</legend>
+          <div id="resumo" class="resumo"></div>
+          <div class="campo"><label class="check"><input type="checkbox" required id="confirmo"> Confirmo que os dados são verdadeiros <span aria-hidden="true">*</span></label></div>
+          <button type="submit" class="btn btn--enviar">✓ Enviar pré-matrícula</button>
+        </fieldset>
+
+        <nav class="formulario__navegacao" aria-label="Navegação do formulário">
+          <button type="button" class="btn btn--voltar" id="btnVoltar">← Voltar</button>
+          <button type="button" class="btn btn--proximo" id="btnProx">Próximo →</button>
+        </nav>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 EmbersTech - EduFlow | Protótipo</p>
+  </footer>

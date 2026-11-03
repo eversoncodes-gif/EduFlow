@@ -1,9 +1,5 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 
-}
+
 :root{
     --primary-color:#4a44a4;
     --secondary-color:#6c63FF;
@@ -19,6 +15,14 @@
     --font-heading:"Poppins",sans-serif;
     --font-logo:"Lobster",sans-serif;
 }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
 body{
 padding: 0;
 margin: 0;
