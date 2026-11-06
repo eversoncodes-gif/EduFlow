@@ -1,7 +1,7 @@
-//esees dois documentos das etapas nao sei bem como funcionam, mas vou descobrir depois 
+//as duas variaveis sao as etapas. nesse caso usei let porue as etapas sempre mudam mas const 5 porque nao importa quantas mudancas acontecam o total de fases sao 5 
 let etapa = 1;
 const total = 5;
-//aqui as variaveis todas desde as do botao proximo as do botao voltar
+//
 const btnProx = document.getElementById('btnProx');
 const btnVoltar = document.getElementById('btnVoltar');
 const jaEstudou = document.getElementById('jaEstudou');
