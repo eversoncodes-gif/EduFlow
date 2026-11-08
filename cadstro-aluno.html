@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-
+<!-- aqui e a parte do topo nesse caso o cabecalho -->
   <header class="cabecalho">
     <div class="cabecalho__conteudo">
-      <h1 class="cabecalho__logo"><h1>EduFlow</h1>
-      <p class="cabecalho__sub"><p>Pré-matrícula a partir de casa</p>
+      <h1 class="cabecalho__logo">EduFlow</h1>
+      <p class="cabecalho__sub">Pré-matrícula a partir de casa</p>
       <p>Facilitando Processos e melhorando a educacao</p>
     </div>
   </header>
@@ -27,7 +27,7 @@
       <header class="formulario-header">
         <h2 id="titulo-formulario">Ficha de Pré-Matrícula</h2>
         <p>Encarregado preenche em casa. Só vai à escola para levantar recibo.</p>
-        
+        <!-- aqui a parte de navegacao do formulario nesse caso onde ele esta na segunda seccao por diante -->
         <nav class="progresso" aria-label="Progresso do formulário">
           <span class="progresso__item progresso__item--ativo"></span>
           <span class="progresso__item"></span>
@@ -36,16 +36,20 @@
           <span class="progresso__item"></span>
         </nav>
       </header>
+      <!-- comeca o formulario do estudante, ainda esse novalidate nao sei como esta -->
 
       <form id="formCadastro" class="formulario" novalidate>
 
-        <!-- SECÇÃO 1 -->
+        <!-- SECÇÃO 1 aqui vem os dados dos proprios alunos primeiro-->
         <fieldset class="seccao seccao--ativa" id="s1">
-          <legend class="seccao__titulo">1. Dados do Aluno</legend>
-          
-          <div class="grid grid--2">
+          <legend class="seccao__titulo">
+            1. Dados do Aluno
+          </legend>
+           <div class="grid grid--2">
             <div class="campo">
-              <label for="nome" class="campo__label">Nome completo <span aria-hidden="true">*</span></label>
+              <label for="nome" class="campo__label">
+                Nome completo <span aria-hidden="true">*</span>
+              </label>
               <input type="text" id="nome" class="campo__input" placeholder="Ex: João Félix Figueiredo" required autocomplete="name">
             </div>
             <div class="campo">
@@ -53,7 +57,8 @@
               <input type="text" id="apelido" class="campo__input" placeholder="Figueiredo">
             </div>
           </div>
-
+          <!-- aqui ja e a parte da data,sexo e naturalidade -->
+ 
           <div class="grid grid--3">
             <div class="campo">
               <label for="nasc" class="campo__label">Data nascimento <span aria-hidden="true">*</span></label>
@@ -71,6 +76,7 @@
               <input type="text" id="natural" class="campo__input" placeholder="Ex: Maxixe">
             </div>
           </div>
+          <!-- aqui a parte do BI e NUIT -->
 
           <div class="grid grid--2">
             <div class="campo">
@@ -82,26 +88,36 @@
               <input type="text" id="nuit" class="campo__input" placeholder="Opcional" inputmode="numeric">
             </div>
           </div>
+          <!-- aqui ja seleccionas a classe que pretendes estudar  -->
 
           <div class="campo">
             <label for="classe" class="campo__label">Classe pretendida <span aria-hidden="true">*</span></label>
             <select id="classe" class="campo__input" required>
               <option value="">Escolher...</option>
               <optgroup label="Ensino Primário">
-                <option>1ª Classe</option><option>2ª Classe</option><option>3ª Classe</option>
-                <option>4ª Classe</option><option>5ª Classe</option><option>6ª Classe</option>
+                <option>1ª Classe</option>
+                <option>2ª Classe</option>
+                <option>3ª Classe</option>
+                <option>4ª Classe</option>
+                <option>5ª Classe</option>
+                <option>6ª Classe</option>
               </optgroup>
               <optgroup label="ESG1 - 1º Ciclo Secundário">
-                <option>7ª Classe</option><option>8ª Classe</option><option>9ª Classe</option>
+                <option>7ª Classe</option>
+                <option>8ª Classe</option>
+                <option>9ª Classe</option>
               </optgroup>
+
               <optgroup label="ESG2 - 2º Ciclo Secundário">
-                <option>10ª Classe</option><option>11ª Classe</option><option>12ª Classe</option>
+                <option>10ª Classe</option>
+                <option>11ª Classe</option>
+                <option>12ª Classe</option>
               </optgroup>
             </select>
           </div>
         </fieldset>
 
-        <!-- SECÇÃO 2 -->
+        <!-- SECÇÃO 2, dados do encarregado -->
         <fieldset class="seccao" id="s2">
           <legend class="seccao__titulo">2. Dados do Encarregado</legend>
           <div class="campo">
@@ -111,7 +127,13 @@
           <div class="grid grid--2">
             <div class="campo">
               <label for="parentesco" class="campo__label">Parentesco</label>
-              <select id="parentesco" class="campo__input"><option>Pai</option><option>Mãe</option><option>Tio/Tia</option><option>Avó/Avô</option><option>Outro</option></select>
+              <select id="parentesco" class="campo__input">
+                <option>Pai</option> <!--aqui sao os graus de parentesco do familiar a preencheer o formulario-->
+                <option>Mãe</option>
+                <option>Tio/Tia</option>
+                <option>Avó/Avô</option>
+                <option>Outro</option>
+              </select>
             </div>
             <div class="campo">
               <label for="encTel" class="campo__label">Telefone / WhatsApp <span aria-hidden="true">*</span></label>
@@ -130,23 +152,44 @@
           </div>
         </fieldset>
 
-        <!-- SECÇÃO 3 -->
+        <!-- SECÇÃO 3, aqui e muito mais para pessoas iniciais, ou para pessoas que se candidatam pela segunda vez -->
         <fieldset class="seccao" id="s3">
           <legend class="seccao__titulo">3. Percurso Escolar</legend>
           <div class="campo">
             <label for="jaEstudou" class="campo__label">Já estudou nesta escola?</label>
-            <select id="jaEstudou" class="campo__input"><option value="nao">Não - Aluno novo</option><option value="sim">Sim - Renovação</option></select>
+            <select id="jaEstudou" class="campo__input">
+              <option value="nao">Não - Aluno novo</option>
+              <option value="sim">Sim - Renovação</option>
+            </select>
           </div>
+          <!-- aqui a classe que o aluno frequentou ano passado,assim saberemos mais ou menos que classe usam mais de renovacao ou matriculas -->
           <div id="campoAntigo" class="bloco-condicional">
             <div class="grid grid--2">
-              <div class="campo"><label for="classeAntiga" class="campo__label">Classe ano passado</label><select id="classeAntiga" class="campo__input"><option>6ª</option><option>7ª</option><option>8ª</option><option>9ª</option><option>10ª</option><option>11ª</option></select></div>
-              <div class="campo"><label for="turmaAntiga" class="campo__label">Turma</label><input type="text" id="turmaAntiga" class="campo__input" placeholder="Ex: B"></div>
+              <div class="campo">
+                <label for="classeAntiga" class="campo__label">Classe ano passado</label>
+                <select id="classeAntiga" class="campo__input">
+                  <option>6ª</option>
+                  <option>7ª</option>
+                  <option>8ª</option>
+                  <option>9ª</option>
+                  <option>10ª</option>
+                  <option>11ª</option>
+                </select>
+              </div>
+              
+              <div class="campo">
+                <label for="turmaAntiga" class="campo__label">Turma</label>
+                <input type="text" id="turmaAntiga" class="campo__input" placeholder="Ex: B">
+              </div>
             </div>
           </div>
-          <div class="campo"><label for="ultimaEscola" class="campo__label">Última escola frequentada</label><input type="text" id="ultimaEscola" class="campo__input"></div>
+          <div class="campo">
+            <label for="ultimaEscola" class="campo__label">Última escola frequentada</label>
+            <input type="text" id="ultimaEscola" class="campo__input"></div>
         </fieldset>
 
-        <!-- SECÇÃO 4 -->
+        <!--
+         SECÇÃO 4 -->
         <fieldset class="seccao" id="s4">
           <legend class="seccao__titulo">4. Documentos e Saúde</legend>
           <p class="campo__ajuda">Assinale o que já tem</p>
@@ -164,7 +207,11 @@
         <fieldset class="seccao" id="s5">
           <legend class="seccao__titulo">5. Confirmação</legend>
           <div id="resumo" class="resumo"></div>
-          <div class="campo"><label class="check"><input type="checkbox" required id="confirmo"> Confirmo que os dados são verdadeiros <span aria-hidden="true">*</span></label></div>
+          <div class="campo">
+            <label class="check">
+              <input type="checkbox" required id="confirmo"> 
+              Confirmo que os dados são verdadeiros 
+              <span aria-hidden="true">*</span></label></div>
           <button type="submit" class="btn btn--enviar">✓ Enviar pré-matrícula</button>
         </fieldset>
 

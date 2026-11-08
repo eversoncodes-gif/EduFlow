@@ -1,11 +1,11 @@
 //as duas variaveis sao as etapas. nesse caso usei let porue as etapas sempre mudam mas const 5 porque nao importa quantas mudancas acontecam o total de fases sao 5 
 let etapa = 1;
 const total = 5;
-//
-const btnProx = document.getElementById('btnProx');
-const btnVoltar = document.getElementById('btnVoltar');
-const jaEstudou = document.getElementById('jaEstudou');
-const campoAntigo = document.getElementById('campoAntigo');
+//aqui sao as variaveis que vao ser usadas no codigo 
+const btnProx = document.getElementById('btnProx');//o botao de avancar
+const btnVoltar = document.getElementById('btnVoltar');//botao de voltar
+const jaEstudou = document.getElementById('jaEstudou');//qui e a parte onde os alunos recentes ainda entram.
+const campoAntigo = document.getElementById('campoAntigo');//
 const form = document.getElementById('formCadastro');
 
 //nao percebi nada do codigo

@@ -261,7 +261,7 @@ h1,h2,legend{
 
 .btn--voltar{
     background:var(--primary);
-    display:none;
+    /* display:none; */
 }
 
 .btn--proximo{
