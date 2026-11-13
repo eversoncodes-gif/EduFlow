@@ -1,30 +1,16 @@
-// const campoPesquisa = document.getElementById("pesquisar-aluno");
-// const listaAlunos = document.getElementById("lista-alunos");
-// campoPesquisa.addEventListener("input", function(){
-//     //aqui crio outra variavel porque?
-//     //sera que e tipo deixa nesse caso let pesquisa pegar no campo e transformar tudo em menusculas usa-se o lower case, mas o trim nao sei para que serve
-//     let pesquisa=campoPesquisa.value.toLowerCase().trim();
-//     let linhas=document.querySelectorAll("tr");
+ const campoPesquisa = document.getElementById("pesquisar-aluno");
+ const listaAlunos = document.getElementById("lista-alunos");
 
-//     linhas.forEach(function(linha))
-//     //.forEach(function(linha)){const dadosAlunos=linha.textContent.toLowerCase()}
-    
-// })
+//  a funcao de pesuisa de escolher nesse caso filtrar 
+campoPesquisa.addEventListener('input',function(){
+ //aqui a parte pesquisa e campo pesquisa tudo menor, nesse caso o trim serve para nao ter espacos entre as palavras 
+    let pesquisa=campoPesquisa.value.toLowercase().trim();
+    //aqui sao as linhas que a pesquisa deve seguir
+    const linhas=document.querySelectorAll('tr');
+    //para cada linha deve pegar os dados e filtrar os resultados 
+    linhas.forEach(function(linha){
+        const
+    })
+});
 
-
-// /*
-// campoPesquisa.addEventListener("input", function () {
-//     const pesquisa = campoPesquisa.value.toLowerCase().trim();
-
-//     const linhas = listaAlunos.querySelectorAll("tr");
-
-//     linhas.forEach(function (linha) {
-//         const dadosAluno = linha.textContent.toLowerCase();
-
-//         if (dadosAluno.includes(pesquisa)) {
-//             linha.style.display = "";
-//         } else {
-//             linha.style.display = "none";
-//         }
-//     });
-// });*/
+console.log(campoPesquisa)
