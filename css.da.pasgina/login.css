@@ -70,9 +70,10 @@ input{
 }
 input{
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     height: 2.5rem;
     width: 100%;
+    outline: none;
     /* border-top-right-radius: 11px;
     border-top-left-radius: 11px; */
 }

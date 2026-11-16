@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css.da.pasgina/cadastro.css">
-  <link rel="stylesheet" href="">
+  
 </head>
 <body>
 <!-- aqui e a parte do topo nesse caso o cabecalho -->
@@ -67,6 +67,7 @@
             <div class="campo">
               <label for="sexo" class="campo__label">Sexo</label>
               <select id="sexo" class="campo__input">
+                <option value="selecionar">Selecionar...</option>
                 <option>Masculino</option>
                 <option>Feminino</option>
               </select>
@@ -128,6 +129,7 @@
             <div class="campo">
               <label for="parentesco" class="campo__label">Parentesco</label>
               <select id="parentesco" class="campo__input">
+                <option value="">Seleccionar...</option>
                 <option>Pai</option> <!--aqui sao os graus de parentesco do familiar a preencheer o formulario-->
                 <option>Mãe</option>
                 <option>Tio/Tia</option>
@@ -168,6 +170,7 @@
               <div class="campo">
                 <label for="classeAntiga" class="campo__label">Classe ano passado</label>
                 <select id="classeAntiga" class="campo__input">
+                  <option value="">Seleccionar...</option>
                   <option>6ª</option>
                   <option>7ª</option>
                   <option>8ª</option>
@@ -189,7 +192,7 @@
         </fieldset>
 
         <!--
-         SECÇÃO 4 -->
+         SECÇÃO 4, aqui documentos e os demais requisitos, deve ser aqui onde o aluno manda os seus documentos,BI,Fotos,Certificado -->
         <fieldset class="seccao" id="s4">
           <legend class="seccao__titulo">4. Documentos e Saúde</legend>
           <p class="campo__ajuda">Assinale o que já tem</p>
@@ -199,11 +202,17 @@
             <label class="check"><input type="checkbox" id="docFotos"> 2 Fotos</label>
             <label class="check"><input type="checkbox" id="docCertificado"> Certificado</label>
           </div>
-          <div class="campo"><label for="endereco" class="campo__label">Bairro / Endereço</label><input type="text" id="endereco" class="campo__input" placeholder="Ex: Chambone - Maxixe"></div>
-          <div class="campo"><label for="saude" class="campo__label">Problema de saúde (opcional)</label><textarea id="saude" class="campo__input campo__input--area" rows="3"></textarea></div>
+          <div class="campo">
+            <label for="endereco" class="campo__label">Bairro / Endereço</label>
+            <input type="text" id="endereco" class="campo__input" placeholder="Ex: Chambone - Maxixe">
+          </div>
+          <div class="campo">
+            <label for="saude" class="campo__label">Problema de saúde (opcional)</label>
+            <textarea id="saude" class="campo__input campo__input--area" rows="3"></textarea>
+          </div>
         </fieldset>
 
-        <!-- SECÇÃO 5 -->
+        <!-- SECÇÃO 5, confirmacao do mesmo -->
         <fieldset class="seccao" id="s5">
           <legend class="seccao__titulo">5. Confirmação</legend>
           <div id="resumo" class="resumo"></div>

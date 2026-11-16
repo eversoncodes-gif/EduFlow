@@ -4,13 +4,20 @@
 //  a funcao de pesuisa de escolher nesse caso filtrar 
 campoPesquisa.addEventListener('input',function(){
  //aqui a parte pesquisa e campo pesquisa tudo menor, nesse caso o trim serve para nao ter espacos entre as palavras 
-    let pesquisa=campoPesquisa.value.toLowercase().trim();
+    let pesquisa=campoPesquisa.value.toLowerCase().trim();
     //aqui sao as linhas que a pesquisa deve seguir
     const linhas=document.querySelectorAll('tr');
-    //para cada linha deve pegar os dados e filtrar os resultados 
-    linhas.forEach(function(linha){
-        const
-    })
-});
+//Nas linnhas para cada linha da funcao(linha) deve pegar na variavel dadosAluno-onde tem que trnaformar todos Elementos em menusculas
 
-console.log(campoPesquisa)
+   linhas.forEach(function(linha){
+        const dadosAluno = linha.textContent.toLowerCase();//a parte do if Else nao tenho tanta nocao
+        if (dadosAluno.includes(pesquisa)) {//essa parte nao conheco
+            linha.style.display="";
+            
+         } else {
+             linha.style.display="none";
+            
+         }
+     });
+ });
+
